@@ -1,12 +1,10 @@
-from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel, RunConfig, function_tool, GuardrailFunctionOutput, RunContextWrapper, input_guardrail, enable_verbose_stdout_logging
+from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel, RunConfig, function_tool, input_guardrail
 from dotenv import load_dotenv
 from pydantic import BaseModel
 import os
 
 
 load_dotenv()
-
-enable_verbose_stdout_logging()
 
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 
